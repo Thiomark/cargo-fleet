@@ -1,4 +1,4 @@
-# store
+# website
 
 ## Project setup
 ```
