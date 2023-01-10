@@ -1,20 +1,118 @@
 const vehicles = [
    {
-      "name":"1 Ton LDV",
+      "name":"8 Seater Bus",
       "driversLicence":"B",
-      "tank":"80ℓ",
-      "seats":"2",
+      "tank":"65ℓ",
+      "seats":"8",
       "powerstaring":"Yes",
       "radion":"Yes",
       "aircon":"Yes",
-      "gvm":"2810KG",
-      "tare":"1664KG",
-      "payload":"1146KG",
+      "gvm":"3050KG",
+      "tare":"1910KG",
+      "payload":"1140KG",
       "extra":"-",
-      "images":"https://superrent.co.za/wp-content/uploads/2011/10/1-ton-ldv2.jpg"
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376095/cargo/8-seater-bus1.jpg"
    },
    {
-      "name":"1400 Motor Car",
+      "name":"14 Seater Bus",
+      "driversLicence":"B+PRDP",
+      "tank":"70ℓ",
+      "seats":"14",
+      "powerstaring":"Yes",
+      "radion":"Yes",
+      "aircon":"Yes",
+      "gvm":"3300KG",
+      "tare":"2130KG",
+      "payload":"1170KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376096/cargo/14-seater-bus1.jpg"
+   },
+   {
+      "name":"1 Ton Refrigerated Truck / Bakkie",
+      "driversLicence":"B",
+      "tank":"75ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"Yes",
+      "aircon":"Yes",
+      "gvm":"3000KG",
+      "tare":"1710KG",
+      "payload":"1290KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376097/cargo/16-ton-refrigerated-truck.jpg"
+   },
+   {
+      "name":"6 Ton Drop Side Truck",
+      "driversLicence":"CI+PRDP",
+      "tank":"200ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"No",
+      "aircon":"No",
+      "gvm":"10500KG",
+      "tare":"4680KG",
+      "payload":"5820KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376095/cargo/6-ton-drop-side-truck.jpg"
+   },
+   {
+      "name":"8 Ton Drop Side Truck",
+      "driversLicence":"CI+PRDP",
+      "tank":"400ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"No",
+      "aircon":"No",
+      "gvm":"15500KG",
+      "tare":"7000KG",
+      "payload":"8500KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376096/cargo/8-ton-drop-side-truck.jpg"
+   },
+   {
+      "name":"14-ton-refrigerated-truck",
+      "driversLicence":"B",
+      "tank":"75ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"Yes",
+      "aircon":"Yes",
+      "gvm":"3000KG",
+      "tare":"1710KG",
+      "payload":"1290KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376097/cargo/14-ton-refrigerated-truck.jpg"
+   },
+   {
+      "name":"8 Ton Curtain Side Truck",
+      "driversLicence":"CI+PRDP",
+      "tank":"400ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"No",
+      "aircon":"No",
+      "gvm":"15500KG",
+      "tare":"7080KG",
+      "payload":"8420KG",
+      "extra":"Tailift",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376095/cargo/8-ton-curtain-side-truck.jpg"
+   },
+   {
+      "name":"8-ton-crane-hazchem-truck",
+      "driversLicence":"CI+PRDP",
+      "tank":"400ℓ",
+      "seats":"3",
+      "powerstaring":"Yes",
+      "radion":"No",
+      "aircon":"No",
+      "gvm":"15500KG",
+      "tare":"7000KG",
+      "payload":"8500KG",
+      "extra":"-",
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376095/cargo/8-ton-crane-hazchem-truck.jpg"
+   },
+   {
+      "name":"14-ton-drop-side-flat-deck-truck",
       "driversLicence":"B",
       "tank":"45ℓ",
       "seats":"5",
@@ -25,7 +123,7 @@ const vehicles = [
       "tare":"1080KG",
       "payload":"390KG",
       "extra":"-",
-      "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/drivers-license.svg"
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376097/cargo/14-ton-drop-side-flat-deck-truck.jpg"
    },
    {
       "name":"1500 Motor Car",
@@ -70,21 +168,7 @@ const vehicles = [
       "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/power-steering.svg"
    },
    {
-      "name":"1 Ton Refrigerated Truck / Bakkie",
-      "driversLicence":"B",
-      "tank":"75ℓ",
-      "seats":"3",
-      "powerstaring":"Yes",
-      "radion":"Yes",
-      "aircon":"Yes",
-      "gvm":"3000KG",
-      "tare":"1710KG",
-      "payload":"1290KG",
-      "extra":"-",
-      "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/radio-cd.svg"
-   },
-   {
-      "name":"2½ Ton Refrigerated Truck",
+      "name":"2.5-ton-refrigerated-truck.jpg",
       "driversLicence":"CI+PRDP",
       "tank":"100ℓ",
       "seats":"3",
@@ -152,34 +236,6 @@ const vehicles = [
       "payload":"843KG",
       "extra":"Canopy",
       "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/extras.svg"
-   },
-   {
-      "name":"8 Seater Bus",
-      "driversLicence":"B",
-      "tank":"65ℓ",
-      "seats":"8",
-      "powerstaring":"Yes",
-      "radion":"Yes",
-      "aircon":"Yes",
-      "gvm":"3050KG",
-      "tare":"1910KG",
-      "payload":"1140KG",
-      "extra":"-",
-      "images":"https://superrent.co.za/wp-content/plugins/wp-e-commerce/wpsc-theme/wpsc-images/indicator.gif"
-   },
-   {
-      "name":"14 Seater Bus",
-      "driversLicence":"B+PRDP",
-      "tank":"70ℓ",
-      "seats":"14",
-      "powerstaring":"Yes",
-      "radion":"Yes",
-      "aircon":"Yes",
-      "gvm":"3300KG",
-      "tare":"2130KG",
-      "payload":"1170KG",
-      "extra":"-",
-      "images":"https://superrent.co.za/wp-content/uploads/2011/12/1400-motor-car.jpg"
    },
    {
       "name":"1 Ton Panel Van",
@@ -280,20 +336,6 @@ const vehicles = [
       "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/payload.svg"
    },
    {
-      "name":"6 Ton Drop Side Truck",
-      "driversLicence":"CI+PRDP",
-      "tank":"200ℓ",
-      "seats":"3",
-      "powerstaring":"Yes",
-      "radion":"No",
-      "aircon":"No",
-      "gvm":"10500KG",
-      "tare":"4680KG",
-      "payload":"5820KG",
-      "extra":"-",
-      "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/cargo-capacity.svg"
-   },
-   {
       "name":"6 Ton Refrigerated Truck",
       "driversLicence":"CI+PRDP",
       "tank":"200ℓ",
@@ -322,20 +364,6 @@ const vehicles = [
       "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/extras.svg"
    },
    {
-      "name":"8 Ton Drop Side Truck",
-      "driversLicence":"CI+PRDP",
-      "tank":"400ℓ",
-      "seats":"3",
-      "powerstaring":"Yes",
-      "radion":"No",
-      "aircon":"No",
-      "gvm":"15500KG",
-      "tare":"7000KG",
-      "payload":"8500KG",
-      "extra":"-",
-      "images":"https://superrent.co.za/wp-content/plugins/wp-e-commerce/wpsc-theme/wpsc-images/indicator.gif"
-   },
-   {
       "name":"8 Ton Crane Truck",
       "driversLicence":"CI+PRDP",
       "tank":"400ℓ",
@@ -348,20 +376,6 @@ const vehicles = [
       "payload":"5800KG",
       "extra":"-",
       "images":"https://superrent.co.za/wp-content/uploads/2019/07/1500-motor-car.jpg"
-   },
-   {
-      "name":"8 Ton Curtain Side Truck",
-      "driversLicence":"CI+PRDP",
-      "tank":"400ℓ",
-      "seats":"3",
-      "powerstaring":"Yes",
-      "radion":"No",
-      "aircon":"No",
-      "gvm":"15500KG",
-      "tare":"7080KG",
-      "payload":"8420KG",
-      "extra":"Tailift",
-      "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/drivers-license.svg"
    },
    {
       "name":"8 Ton Refrigerated Truck",
@@ -389,7 +403,7 @@ const vehicles = [
       "tare":"7000KG",
       "payload":"8000KG",
       "extra":"-",
-      "images":"https://www.greenhat.co.za/dev/super-rent-2018/staging/wp-content/themes/superrent/images/passengers.svg"
+      "image":"https://res.cloudinary.com/thiomark/image/upload/v1673376095/cargo/8-ton-crane-hazchem-truck.jpg"
    },
    {
       "name":"14 Ton Drop Side Truck / Flat Deck",
